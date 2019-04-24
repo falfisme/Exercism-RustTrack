@@ -102,9 +102,9 @@ Tetapi kita perlu memfilter lagi, karakter `' '` spasi dan `'-'` tanda strip bis
 
 Setelah pengecekan karakter lain selain huruf, maka barulah kita mendapatkan hasil yang akurat mengenai pencarian persamaan karakter.
 
-`count` berguna untuk menghitung jumlah yang terdapat pada huruf yang sama atau tidak. Jika terdapat hasil yang sama setelah filterisasi, maka `count` akan bertambah satu. Jika hasilnya tidak, maka count akan sama hasilnya.
+`count` berguna untuk menghitung jumlah yang terdapat pada huruf yang sama atau tidak. Maka kita deklarasikan diawal looping. Jika terdapat hasil yang sama setelah filterisasi, maka `count` akan bertambah satu. Jika hasilnya tidak, maka count akan sama hasilnya.
 
-karena count selalu ditambah jika terdapat kesamaan karakter, maka perlunya membuat `if else` untuk me-return apakah kata ini merupakan kata isogram. atau bukan. `true` untuk hasil bahwa kata itu Isogram dan `false` sebaliknya.
+karena count selalu ditambah jika terdapat kesamaan karakter, maka perlunya membuat `if else` untuk me-return apakah kata ini merupakan kata isogram. atau bukan. `true` untuk hasil bahwa kata itu Isogram dan `false` sebaliknya. berikut kodenya:.
 
 ```if count > 0 {
     	bolean = false
