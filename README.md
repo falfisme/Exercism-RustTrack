@@ -15,9 +15,9 @@ berikut instruksinya
 > The word isograms, however, is not an isogram, because the s repeats._ 
 
 Dari masalah diatas, kita disuruh untuk membuat program dimana program tersebut dapat mengetahui bahwa sebuah kata yang di input merupakan Isogram atau tidak. Contohnya pada kata _"lumberjacks"_. kata Lumberjack sendiri tidak memiliki satupun karakter huruf yang terulang. begitupun kata _Background, Downstream dan Six-year-old_. Berikut kode yang dapat saya solve
-<p> 
 
-    
+
+   ```rs 
     pub fn check(candidate: &str) -> bool {
     let tulisan = candidate.to_lowercase();
     let char_vec: Vec<char> = tulisan.chars().collect();
@@ -54,16 +54,16 @@ Dari masalah diatas, kita disuruh untuk membuat program dimana program tersebut 
     return bolean;
     }
 
-</p>
+```
 
 
 Dalam kode diatas, algroritma yang dibangun sebagai berikut. 
 
-Pertama kata input kita jadikan lowercase semua agar tidak terjadi miss (karena rust termasuk sensitive case) dengan menggunakan to_lowercase();. 
-`let tulisan = candidate.to_lowercase();`
-<p> candidate </p> merupakan parameter dari fungsi check
+Pertama kata input kita jadikan lowercase semua agar tidak terjadi miss (karena rust termasuk sensitive case) dengan menggunakan `to_lowercase();`. 
+<p> `let tulisan = candidate.to_lowercase();`
+<p> `candidate` </p> merupakan parameter dari fungsi `check`
 
-Kedua kita jadikan kata input tadi menjadi sebuah vector, yang berarti di dalam setiap kolom vektornya terdapat satu karakter dari input kata nya. Misal "halo" menjadi ['h', 'a', 'l', 'o']. 
+Kedua kita jadikan kata input tadi menjadi sebuah vector, yang berarti di dalam setiap kolom vektornya terdapat satu karakter dari input kata nya. Misal `"halo"` menjadi `['h', 'a', 'l', 'o']`. 
 
 ketiga
 
