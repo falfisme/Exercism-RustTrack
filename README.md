@@ -1,5 +1,5 @@
 # Exercism-RustTrack
-Perkenalkan saya, Faqihuddin Al Farisi selaku mahasiswa Ilmu Komputer Universitas Negeri Jakarta. Dalam Exercise kali ini, saya berhasil mengerjakan beberapa problem yang dapat di akses pada folder-folder diatas. Problemnya beragam, yang saya kerjakan beberapa bagian Easy dan Medium.
+Perkenalkan saya, Faqihuddin Al Farisi selaku mahasiswa Ilmu Komputer Universitas Negeri Jakarta. Dalam Exercise kali ini, saya berhasil mengerjakan beberapa problem dengan bahasa pemrograman Rust yang dapat di akses pada folder-folder diatas. Problemnya beragam, yang saya kerjakan beberapa bagian Easy dan Medium.
 
 Saya ingin membahas salah satu problem yang telah solved. yaitu problem dengan judul Isogram.
 
@@ -57,5 +57,13 @@ Dari masalah diatas, kita disuruh untuk membuat program dimana program tersebut 
 </p>
 
 
-Dalam kode diatas, algroritma yang dibangun sebagai berikut. Pertama kata input kita jadikan lowercase semua agar tidak terjadi miss (karena rust termasuk sensiive case). Kedua kita jadikan kata input tadi menjadi sebuah vector, yang berarti di dalam setiap kolom vektornya terdapat satu karakter dari input kata nya. Misal "halo" menjadi ['h', 'a', 'l', 'o']. ketiga
+Dalam kode diatas, algroritma yang dibangun sebagai berikut. 
+
+Pertama kata input kita jadikan lowercase semua agar tidak terjadi miss (karena rust termasuk sensitive case) dengan menggunakan to_lowercase();. 
+<p> let tulisan = candidate.to_lowercase(); </p> 
+<p> candidate </p> merupakan parameter dari fungsi check
+
+Kedua kita jadikan kata input tadi menjadi sebuah vector, yang berarti di dalam setiap kolom vektornya terdapat satu karakter dari input kata nya. Misal "halo" menjadi ['h', 'a', 'l', 'o']. 
+
+ketiga
 
