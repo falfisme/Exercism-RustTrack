@@ -60,7 +60,7 @@ Dari masalah diatas, kita disuruh untuk membuat program dimana program tersebut 
 Dalam kode diatas, algroritma yang dibangun sebagai berikut. 
 
 Pertama kata input kita jadikan lowercase semua agar tidak terjadi miss (karena rust termasuk sensitive case) dengan menggunakan to_lowercase();. 
-<p> 'let tulisan = candidate.to_lowercase();' </p> 
+`let tulisan = candidate.to_lowercase();`
 <p> candidate </p> merupakan parameter dari fungsi check
 
 Kedua kita jadikan kata input tadi menjadi sebuah vector, yang berarti di dalam setiap kolom vektornya terdapat satu karakter dari input kata nya. Misal "halo" menjadi ['h', 'a', 'l', 'o']. 
