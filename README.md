@@ -57,5 +57,5 @@ Dari masalah diatas, kita disuruh untuk membuat program dimana program tersebut 
 </p>
 
 
-Dalam kode diatas, saya 
+Dalam kode diatas, algroritma yang dibangun sebagai berikut. Pertama kata input kita jadikan lowercase semua agar tidak terjadi miss (karena rust termasuk sensiive case). Kedua kita jadikan kata input tadi menjadi sebuah vector, yang berarti di dalam setiap kolom vektornya terdapat satu karakter dari input kata nya. Misal "halo" menjadi ['h', 'a', 'l', 'o']. ketiga
 
