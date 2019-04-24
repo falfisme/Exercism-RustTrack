@@ -5,24 +5,27 @@ Saya ingin membahas salah satu problem yang telah solved. yaitu problem dengan j
 
 ## Isogram 
 berikut instruksinya
-<p> Determine if a word or phrase is an isogram.
-An isogram (also known as a "nonpattern word") is a word or phrase without a repeating letter, however spaces and hyphens are allowed to appear multiple times.
-Examples of isograms:
+> _Determine if a word or phrase is an isogram.
+> An isogram (also known as a "nonpattern word") is a word or phrase without a repeating letter, however spaces and hyphens are allowed to appear multiple times.
+> Examples of isograms:
     lumberjacks,
     background,
     downstream,
     six-year-old.
-The word isograms, however, is not an isogram, because the s repeats. </p>
+> The word isograms, however, is not an isogram, because the s repeats._ 
 
-Kode yang saya solve
-<p> pub fn check(candidate: &str) -> bool {
+Dari masalah diatas, kita disuruh untuk membuat program dimana program tersebut dapat mengetahui bahwa sebuah kata yang di input merupakan Isogram atau tidak. Contohnya pada kata _"lumberjacks"_. kata Lumberjack sendiri tidak memiliki satupun karakter huruf yang terulang. begitupun kata _Background, Downstream dan Six-year-old_. Berikut kode yang dapat saya solve
+<p> 
+
+    
+    pub fn check(candidate: &str) -> bool {
     let tulisan = candidate.to_lowercase();
     let char_vec: Vec<char> = tulisan.chars().collect();
     let mut count = 0;
 
     for i in 0..char_vec.len(){
-    	let tes = char_vec[i];
-    	let titik = i;
+        let tes = char_vec[i];
+        let titik = i;
     	for j in 0..char_vec.len()-1{
     		if char_vec[j] == tes{
     			if titik == j {
@@ -39,20 +42,20 @@ Kode yang saya solve
     			count = count;
     		}
     	}
-    	
     }
-
+    
     let mut bolean = true;
-
     if count > 0 {
     	bolean = false
     }else{
     	bolean = true;
     	count = 0;
     }
+    return bolean;
+    }
 
-
-
-    	return bolean;
-}
 </p>
+
+
+Dalam kode diatas, saya 
+
